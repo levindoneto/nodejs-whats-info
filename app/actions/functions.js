@@ -19,3 +19,12 @@ module.exports.getWhatsAppUsers = function(restriction, callback) {
               .limit(restriction); 
 }
 
+/** Function for getting a whatsapp user by their id from the database.
+ *  @param  {String} id of the whatsapp user.
+ *  @param  {Function} callback.
+ *  @return {void}.
+ */
+module.exports.getWhatsAppUserById = function(id, callback) {
+  WhatsAppUser.findById(id, callback);
+}
+
