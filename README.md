@@ -1,6 +1,8 @@
 # NodeJS WhatsApp Info
 REST Api responsible for managing data from users who are able to utilize the Whatsapp chat bot.
+
 __Author:__ Levindo Gabriel Taschetto Neto.
+
 __Company:__ Lojas Renner S/A.
 
 ## Used Technologies
