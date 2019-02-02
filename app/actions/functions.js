@@ -28,3 +28,20 @@ module.exports.getWhatsAppUserById = function(id, callback) {
   WhatsAppUser.findById(id, callback);
 }
 
+/** Function for getting a whatsapp user by their id from the database.
+ *  @param  {WhatsAppUser} element with the new object.
+ *  @param  {Function} callback.
+ *  @param  {Options} options.
+ *  @param  {Function} callback.
+ *  @return {void}.
+ */
+module.exports.updateWhatsAppUser = function(element, options, databaseQuery, callback) {
+    let updatedElement = {
+        name        : element.name,
+        email       : element.email,
+        funcional   : element.funcional,
+        phonenumber : element.phonenumber,
+        dateOfAdding: Date.now,
+    };
+    Book.findOneAndUpdate(databaseQuery, updatedElement, options, callback);
+};
