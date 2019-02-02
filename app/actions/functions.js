@@ -8,3 +8,14 @@ var WhatsAppUser = require('../../model/user.js')
 module.exports.addWhatsAppUser = function(whatsAppUser, callback) {
   WhatsAppUser.create(whatsAppUser, callback);
 };
+
+/** Function for getting whatsapp users from the database.
+ *  @param  {Integer} restriction of number of users to get.
+ *  @param  {Function} callback.
+ *  @return {void}.
+ */
+module.exports.getWhatsAppUsers = function(restriction, callback) {
+  WhatsAppUser.find(callback)
+              .limit(restriction); 
+}
+
