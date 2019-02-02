@@ -1,0 +1,9 @@
+{
+  "server": {
+    "port": 8050
+  },
+  "database": {
+    "host": "DEFINE HERE",
+    "port": 3000,
+  }
+}
