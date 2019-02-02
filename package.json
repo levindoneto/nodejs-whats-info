@@ -1,0 +1,32 @@
+{
+  "name": "nodejs-whats-info",
+  "version": "1.0.0",
+  "description": "REST Api responsible for managing data from users who are able to utilize the Whatsapp chat bot.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "4.16.4",
+    "body-parser": "1.18.3",
+    "mongoose": "5.4.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://gitlab.lojasrenner.com.br/fera/node-whats-info.git"
+  },
+  "keywords": [
+    "restAPI",
+    "whatsapp",
+    "expressJS",
+    "mongoDB",
+  ],
+  "author": "Levindo Gabriel Taschetto Neto",
+  "bugs": {
+    "url": "http://gitlab.lojasrenner.com.br/fera/node-whats-info/issues"
+  },
+  "homepage": "http://gitlab.lojasrenner.com.br/fera/node-whats-info",
+  "devDependencies": {
+    "eslint": "5.12.1"
+  }
+}
